@@ -3,18 +3,18 @@ SELENIUM Java Cucumber BDD Framework
 
 Intellij idea HTML Reporter GitHub Actions
 
-📑 Table of Contents
-Introduction
-Prerequisites
-Getting Started
-Running Tests
-Project Structure
+📑 Table of Contents:
+Introduction,
+Prerequisites,
+Getting Started,
+Running Tests,
+Project Structure,
 Reporting
 
-📖 Introduction
+📖 Introduction:
 This repository contains a Test Automation Framework built using SELENIUM ,Java,Cucumber for automated testing of UI.
 
-🛠️ Prerequisites
+🛠️ Prerequisites:
 Maven
 selenium-java(4.18.1)
 testng(7.9.0)
@@ -27,16 +27,6 @@ Clone the repository:
 
 git clone https://github.com/vardhanp596/satech_evalution_project/tree/master
 Navigate to the project directory:
-
-
-Install dependencies:
-selenium-java
-testng
-cucumber-core
-cucumber-java
-cucumber-testng
-gherkin
-
 
 🚀 Running Tests
 Run TestRunner.java
@@ -60,7 +50,9 @@ src - test -java-pages
 
 .testrunners package
 |-TestRunner.java
+
 report: Contains the HTML report for test.
+
 📊 Reporting
 HTML report (Logs are attached) is stored in the target cucumber-report directory.
 
