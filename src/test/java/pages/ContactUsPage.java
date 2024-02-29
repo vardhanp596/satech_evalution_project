@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -79,7 +80,11 @@ public class ContactUsPage {
         select.selectByVisibleText(jobRoles);
 
         agreeRadioBtn.click();
-        submitBtn.click();
+        wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", submitBtn);
+        js.executeScript("arguments[0].click();", submitBtn);
+
     }
 
     public void verifyErrorMessageWhenReqFieldValuesMissing(){
